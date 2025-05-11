@@ -12,6 +12,8 @@ let isLoggedIn: boolean = false
 // isLoggedIn.  ----> only function that can be applied on bool will be shown up
 
 // ANY KEYWORD
+// any -> "my dear typescript, please turn off the type checking for this variable! (lmao)
+// avoid using any
 let hero;
 // hover over "hero". typescript makes the type "any", whenever the variable is not defined with any value.
 function getHero() {

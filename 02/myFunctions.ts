@@ -1,24 +1,28 @@
-function addTwo(num : number) {
-    num.toLowerCase(); // -- ye kaise possible hai? number ko lower case???? (because it is assigned any)
-    return num + 2;
+function addTwo(num: number): number {
+    return num + 2
+    // return "hello" -------------> will giv error
 }
 
-function getUpper(val) { // ---> firse any! chhi
-    return val.toUpperCase();
+function getUpper(val: string) {
+    return val.toUpperCase()
 }
 
-function signUp( name: string, email: string, isPaid: boolean ) {
+function signUpUser(name: string, email: string, isPaid: boolean) {
 
 }
 
-let loginUser = (name: string, email: string, isPaid: boolean = false) => {
-    // one default value set in the function itself, only 2 arguments( name and email ) can be sent too.
+let loginUser = (name: string, email: string, isPaid: boolean = true) => {
+
 }
 
-addTwo(5); // num pe hover kar - "any" dikhega -- bad sign
-getUpper(4); // ---> par function mein toh string jaana chahiye?
-signUp("Malhar", "malhar@vhatkar.com", false); // name email password mein number kaise chale gaye??  --- any type
-loginUser("Malhar", "m@m.com")
+let myVal = addTwo(5);
+let upperVal = getUpper("Malhar");
+// let upperVal = getUpper(5);  --> gives error as argument type is string and i am passing number here
+
+signUpUser("Malhar", "malhar@vhatkar.com", true)
+loginUser("Malhar", "malhar@malhar.com")
 
 
-export{}
+
+
+export {}

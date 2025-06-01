@@ -17,3 +17,21 @@ var upperVal = getUpper("Malhar");
 // let upperVal = getUpper(5);  --> gives error as argument type is string and i am passing number here
 signUpUser("Malhar", "malhar@vhatkar.com", true);
 loginUser("Malhar", "malhar@malhar.com");
+// using return type in arrow functions
+var getUser = function (s) {
+    return "s";
+};
+var heroes = ["thor", "spiderman", "ironman", "superman"];
+var heroNumbers = [1, 2, 3];
+heroes.map(function (hero) {
+    return "hero is ".concat(hero);
+});
+heroNumbers.map(function (num) {
+    return "hero number is ".concat(num);
+});
+function consoleError(errorMessage) {
+    console.log(errorMessage);
+}
+function handleError(errorMessage) {
+    throw new Error(errorMessage);
+}
